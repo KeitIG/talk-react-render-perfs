@@ -5,6 +5,12 @@ import Item from '../components/BetterListItem.react';
 
 import chunkArray from '../utils/chunk-array';
 
+/**
+ * This could be even improved, tiles could be moved to a separated component
+ * but as subsequent re-render costs 4ms, it is not really a problem
+ * That said, the scroll event could be improved and some re-render could be
+ * avoided when scrolling
+ */
 
 const ROW_HEIGHT = 32; // HACK this would be great to not have this
 const CHUNK_LENGTH = 20;
